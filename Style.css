@@ -1,0 +1,74 @@
+body {
+  background: #232526;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.xox-container {
+  background: #fff;
+  color: #232526;
+  padding: 40px 32px 32px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  text-align: center;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.xox-container h1 {
+  margin-bottom: 18px;
+  color: #ff8800;
+}
+.xox-status {
+  min-height: 28px;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.xox-board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 8px;
+  margin-bottom: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.xox-cell {
+  width: 80px;
+  height: 80px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #232526;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.xox-cell:hover {
+  background: #ff8800;
+  color: #fff;
+}
+#xox-reset {
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff8800;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#xox-reset:hover {
+  background: #e06d00;
+}
