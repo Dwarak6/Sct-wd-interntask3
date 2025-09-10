@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XOX Game</title>
+  <link rel="stylesheet" href="xox.css" />
+</head>
+<body>
+  <div class="xox-container">
+    <h1>XOX Game</h1>
+    <div style="margin-bottom:14px;">
+      <label><input type="radio" name="xox-mode" value="human" checked> 2 Players</label>
+      <label style="margin-left:12px;"><input type="radio" name="xox-mode" value="computer">  Computer</label>
+    </div>
+    <div id="xox-status" class="xox-status"></div>
+    <div id="xox-board" class="xox-board"></div>
+    <button id="xox-reset">Reset</button>
+  </div>
+  <script src="xox.js"></script>
+</body>
+</html>
